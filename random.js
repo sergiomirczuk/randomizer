@@ -24,7 +24,11 @@ const place = [
 	"Alkohole24"
 ];
 
-console.log(people.map((e, i) => e + ' ' + place[i]));
+console.log(people.map((e, i) => e + ' ' + place[Math.round(Math.random() * place.length)]));
+
+// let res = people.map((elem, index) => `${elem}, ${place[index]}`);
+
+// console.log(res);
 
 // const wolunteersRandom = place[Math.random() * place.length];
 // // console.log(wolunteersRandom);
