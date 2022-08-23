@@ -1,5 +1,5 @@
 
-const wolunteers= [
+const people = [
 	"Maks:",
 	"Wika:",
 	"Yana:",
