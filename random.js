@@ -1,6 +1,6 @@
 
 
-
+function createList() {
     const i = Math.floor(Math.random() * 10);
     const j = Math.floor(Math.random() * 10);
     
@@ -29,10 +29,12 @@
         'Zabka',
         'Alkohole24'
     ];
-    const obj = {};
-    // console.log(`${wolunteers[i]}: ${place[j]}`);
-    wolunteers.forEach((element) => {
-        obj[element] = place[i];
-      });
-      console.log(obj);
+    
+    console.log(`${wolunteers[i]}: ${place[j]}`);
+    
 
+}
+
+for (let i = 0; i < 10; i++) {
+    createList();
+}
