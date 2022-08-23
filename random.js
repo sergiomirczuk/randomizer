@@ -24,6 +24,8 @@ const place = [
 	"Alkohole24"
 ];
 
+console.log(people.map((e, i) => e + ' ' + place[i]));
+
 // const wolunteersRandom = place[Math.random() * place.length];
 // // console.log(wolunteersRandom);
 
@@ -43,10 +45,3 @@ const place = [
 // let newArrRandom = wolunteers.concat(randomPlace);
 
 // console.log(newArrRandom);
-
-
-const photos = [{img: 'a', type: 'b'}, {img: 'c', type: 'd'}];
-
-const links = photos.map(({ img, type }) => ({ image: img, imgType: type }));
-
-console.log(links);
