@@ -1,17 +1,17 @@
-
 const people = [
-	"Maks:",
-	"Wika:",
-	"Yana:",
-	"Wania:",
-	"Denis:",
-	"Kasper:",
-	"Marta:",
-	"Yehor:",
-	"Karolina:",
-	"Wlados:"
+	"Maks",
+	"Wika",
+	"Yana",
+	"Wania",
+	"Denis",
+	"Kasper",
+	"Marta",
+	"Yehor",
+	"Karolina",
+	"Wlados",
 ];
-const place = [
+
+let place = [
 	"lidl",
 	"biedra",
 	"kauf",
@@ -21,10 +21,22 @@ const place = [
 	"Lewiatan",
 	"Carefour",
 	"Zabka",
-	"Alkohole24"
+	"Alkohole24",
 ];
 
-console.log(people.map((e, i) => e + ' ' + place[Math.round(Math.random() * place.length)]));
+function res(j) {
+	let i = Math.floor(Math.random() * place.length);
+
+	let ttt = `${people[j]} : ${place[i]}`;
+	place.splice(i, 1);
+	console.log(ttt);
+}
+
+for (let g = 0; g < people.length; g++) {
+	res(g);
+}
+
+//console.log(people.map((e, i) => e + ' ' + place[Math.round(Math.random() * place.length)]));
 
 // let res = people.map((elem, index) => `${elem}, ${place[index]}`);
 
@@ -44,7 +56,6 @@ console.log(people.map((e, i) => e + ' ' + place[Math.round(Math.random() * plac
 
 // // let wyjazd = `${wolunteers}+${randomPlace}`;
 // // console.log(wyjazd);
-
 
 // let newArrRandom = wolunteers.concat(randomPlace);
 
